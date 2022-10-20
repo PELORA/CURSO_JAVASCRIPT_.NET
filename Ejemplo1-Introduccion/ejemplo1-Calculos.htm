@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción : Calculos</title>
+    <!--Anotaciones van de esta forma
+    inkamos favicon, js y css-->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <script src="js/app1.js"></script>
+    <link rel="stylesheet" href="">
+    <!--inyectar recursos de estilos, 
+    bootstrap = FrameWorks de Estilo(FRAMEWORKS STYLE)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+        crossorigin="anonymous"></script>
+</head>
+<!--Cuerpo de mi formulario-->
+<body>
+  <!-- 
+    Formulario para hacer un calculo
+  -->
+    <div class="container" style="text-align: center;margin: 0 auto; width: 28rem;padding-top:120px ; ">
+        <!--vISUALIZA NUESTRO USUARIO -->
+        <!-- .container {organiza los elementos de html de forma sincronizada}-->
+        <!--.encapsulado-->
+        <!--Texto del boton-->
+        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" 
+          data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Calculo ICM</button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Introduce tus datos</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="dialog">
+                  <!-- el puntero id relaccionado en css y js sera una estructura para
+                    poder referenciar el elemento, el valor y su propiedad-->
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Peso:</label>
+                                <input type="text" class="form-control" id="calculoPeso">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Altura:</label>
+                                <input type="text" class="form-control" id="calculoAltura">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Resultado del IMC:</label>
+                                <textarea class="form-control" id="resultado"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button onclick="" style="text-align:center;margin: 0 auto" type="button" class="btn btn-secondary" 
+                        data-bs-dismiss="modal"><img src ="Image/aspaCerrar.png"></button>
+                        <!-- 
+                          Aqui va la respuesta
+                        -->
+                        <button onclick="calcular()" style="text-align:center;margin: 0 auto" type="button" class="btn btn-primary"
+                        <ion-item-divider>
+                          <ion-label>CALCULAR<img src ="Image/calcular.jpg"></ion-label>
+                        </ion-item-divider>   IMC</button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!-- 
+      Etiqueta desplegable
+    -->
+    <div class="accordion accordion-flush" id="accordionFlushExample" style="text-align: center;margin: 0 auto; width: 27rem;padding-top:120px ; ">
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <ion-item-divider>
+                <ion-label><img src ="Image/desplegar.png"></ion-label>
+              </ion-item-divider>   DESPLEGAR PESTAÑA</button>
+            </button>
+          </h3>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Escribo el contenido que visualizo al desplegar la 
+              pestaña en forma de acordeon <code>.accordion-flush</code>  Este es un item de acordeon <code>Item de acordeon</code>.
+              <br></br>Hago un salto de linea y sigo escribiendo.
+            </div>
+          </div>
+        </div>  
+    </div> 
+    <!-- 
+      Mensaje de alerta
+    -->
+    <div class="alert alert-success" role="alert" style="text-align: center;margin: 0 auto; width: 16rem;" >
+      <h4 class="alert-heading">Atención</h4>
+      <p>Mensaje de alerta</p>
+      <hr>
+      <p class="mb-0">Separando frase del mensaje</p>
+      </div>   
+</body>
+</html>
