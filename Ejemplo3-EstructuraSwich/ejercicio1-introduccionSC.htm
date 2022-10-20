@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estructura Swich case</title>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+  <!-- Swich Case
+
+        ==========
+        Swich Case
+        ==========
+
+        Sintaxis:
+            swich(estructura){
+                case valor1:
+                    sentencia 1;
+                    break;  nos saca de este caso
+                case valor2:
+                    sentencia 2;
+                    break;
+                default:
+                    sentencia de omisiones default;
+            }
+    Enteros        int numeroMes = 4;
+String estacion = "", mes = "";
+
+switch (numeroMes) {
+  case 12:
+    mes = "Diciembre";
+  case 1:
+    mes = "Enero";
+  case 2:
+    mes = "Febrero";
+    estacion = "Invierno";
+    break;
+  case 3:
+    mes = "Marzo";
+  case 4:
+    mes = "Abril";
+  case 5:
+    mes = "Mayo";
+    estacion = "Primavera";
+    break;
+  case 6:
+    mes = "Junio";
+  case 7:
+    mes = "Julio";
+  case 8:
+    mes = "Agosto";
+    estacion = "Verano";
+    break;
+  case 9:
+    mes = "Septiembre";
+  case 10:
+    mes = "Octubre";
+  case 11:
+    mes = "Noviembre";
+    estacion = "Otoño";
+    break;
+}
+    String
+   String tipoDia = "";
+String diaSemana = "Lunes";
+
+switch (diaSemana.toLowerCase()) {
+     case "lunes":
+         tipoDia = "Inicio de semana";
+         break;
+     case "martes":
+     case "míercoles":
+     case "jueves":
+       tipoDia = "Mediados de semana";
+         break;
+     case "viernes":
+       tipoDia = "Inicio de fin se semana";
+         break;
+     case "sábado":
+     case "domingo":
+       tipoDia = "Fin de seman";
+         break;
+ }
+
+System.out.println(diaSemana + " es " + tipoDia); 
+    -->
+  <h2>Identificar Genero 🤦‍♀️ 🤦‍♂️</h2>
+  <script>
+//window en minusculas
+    var sexo = window.prompt("Eres hombre o mujer o lo que eres:");
+    switch (sexo.toLocaleLowerCase()) {
+
+      case "hombre":
+        swal("Eres un hombre heterosexual 👍");
+        break;
+      case "mujer":
+      swal("Eres una mujer heterosexual 👍");
+        break;
+      default:
+        swal("No estas definido aun en genero 😢. ");
+    }
+  </script>
+</body>
+
+</html>
